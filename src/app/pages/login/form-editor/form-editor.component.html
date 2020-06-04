@@ -1,0 +1,11 @@
+<form [formGroup]="loginForm">
+  <ion-item>
+    <ion-label position="stacked">USA Hockey Number <ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="string" formControlName="usaHockeyNumber"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Birthday</ion-label>
+    <ion-datetime required displayFormat="MM/DD/YYYY" placeholder="Select Date" formControlName="birthday"></ion-datetime>
+  </ion-item>
+</form>
